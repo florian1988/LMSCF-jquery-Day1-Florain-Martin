@@ -1,14 +1,65 @@
-header {
-	background-color: lightsteelblue;
-	color: lightseagreen;
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	background-color: lightyellow;
 }
 
+#container {
+	width: 75%;
+	margin: 0 auto;
+	background-color: white;
+	box-shadow: 0 0 4px darkred;
+}
+
+header {
+	background-color: lightseagreen;
+	color: white;
+	margin: 0;
+	padding: 2rem;
+	display: flex;
+	justify-content: space-between;
+}
+
+header h2 {
+	font-size: 200%;
+}
+
+.headerArea p {
+	margin-top: 2.4rem;
+	margin-right: 4rem;
+	font-weight: bold;
+	font-size: 120%;
+}
+
+nav, footer {
+	background-color: orange;
+	margin: 0;
+	padding: 1rem;
+}
+
+nav ul li, footer ul li {
+	display: inline;
+}
+
+nav ul li a, footer ul li a {
+	text-decoration: none;
+	font-weight: bold;
+	color: white;
+	padding: 1rem;
+}
+
+footer {
+	text-align: center;
+}
+
+.mainSlogan, .featuredTitle {
+	text-align: center;
+}
 
 #productArea {
-	width: 75%;
 	display: flex;
 	flex-wrap: wrap;
-	margin: 0 auto;
+	justify-content: space-around;
+	padding: 2rem 0 2rem 0;
 }
 
 .itemCard {
@@ -29,4 +80,12 @@ header {
 
 .itemCard .price {
 	font-size: 120%;
+}
+
+.low {
+	background-color: orange;
+}
+
+.soldOut {
+	background-color: darkred;
 }

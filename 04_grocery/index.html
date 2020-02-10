@@ -1,12 +1,16 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>Grocery</title>
+	<title>eGroceree</title>
 	<link rel="stylesheet" href="css/style.css" type="text/css" />
 	<script src="js/jquery-3.4.1.min.js"></script>
 	<script src="json/products.js"></script>
 </head>
+
 <body>
+
+<div id="container">
+	
 	<header>
 		<div class="headerArea">
 			<h2>eGroceree</h2>
@@ -15,46 +19,33 @@
 			<p>Putting the "e" in Groceree!</p>
 		</div>
 	</header>
+
 	<nav>
 		<ul>
 			<li><a href="#" title="Products">Products</a></li>
 			<li><a href="#" title="Locations">Locations</a></li>
-			<li><a href="#" title="Offers">Special OFfers</a></li>
+			<li><a href="#" title="Offers">Special Offers</a></li>
 		</ul>
 	</nav>
 
 	<main>
-
-		<h1>The eGroceree Store</h1>
-		<h2>Featured Products</h2>	
-		<div id="productArea"></div>
-		
+		<h1 class="mainSlogan">The eGroceree Store</h1>
+		<h2 class="featuredTitle">Featured Products</h2>	
+		<div id="productArea">
+		</div>
 	</main>
 
 	<footer>
 		<ul>
-			<li><a href="#" title="Privacy">Products</a></li>
+			<li><a href="#" title="Privacy">Privacy</a></li>
+			<li><a href="#" title="Terms & Conditions">Terms & Conditions</a></li>
+			<li><a href="#" title="Imprint">Imprint</a></li>
 		</ul>
 	</footer>
 
-<script>
-	let productContent = '';
-	for (let i in productsdata.products) {
-		productContent += `
-		<div class="itemCard">
-			<div class="picSpace">
-				<img src="${productsdata.products[i].image}">
-			</div>
-			<div class="infoSpace">
-				<h3>${productsdata.products[i].name}</h3>
-				<p>${productsdata.products[i].info}</p>
-				<p class="price">€ ${productsdata.products[i].price},-</p>
-			</div>
-		</div>
-		`
-	}
-	$('#productArea').append(productContent);
-</script>
+</div>
+
+<script src="js/custom.js"></script>
 
 </body>
 </html>
