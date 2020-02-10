@@ -4,7 +4,7 @@ body {
 }
 
 #container {
-	width: 75%;
+	width: 80%;
 	margin: 0 auto;
 	background-color: white;
 	box-shadow: 0 0 4px darkred;
@@ -116,7 +116,25 @@ footer {
 	border-radius: 1rem;
 }
 
+@media only screen and (max-width: 920px) {
+
+	header {
+		flex-direction: column;
+		text-align: center;
+	}
+
+	.headerArea p, .headerArea h2 {
+		margin: 0;
+		padding: 0;
+	}
+	
+	nav {
+		text-align: center;
+	}
+
+}
 @media only screen and (max-width: 640px) {
+
 	body {
 		padding: 0;
 		margin: 0;
@@ -126,6 +144,10 @@ footer {
 		width: 100%;
 		margin: 0;
 		box-shadow: none;
+	}
+
+	nav {
+		text-align: center;
 	}
 
 	.itemCard {
