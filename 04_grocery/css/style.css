@@ -11,7 +11,6 @@ body {
 }
 
 header {
-	background-color: lightseagreen;
 	color: white;
 	margin: 0;
 	padding: 2rem;
@@ -20,11 +19,13 @@ header {
 }
 
 header h2 {
-	font-size: 200%;
+	font-size: 300%;
+	font-family: 'Righteous', cursive;
+	letter-spacing: 0.4rem;
 }
 
 .headerArea p {
-	margin-top: 2.4rem;
+	margin-top: 4rem;
 	margin-right: 4rem;
 	font-weight: bold;
 	font-size: 120%;
@@ -64,10 +65,9 @@ footer {
 
 .itemCard {
 	width: 14rem;
-	height: 23rem;
+	height: 26rem;
 	padding: 1rem;
 	text-align: center;
-	background-color: lightseagreen;
 	border-radius: 1rem;
 	color: white;
 	margin: 0.4rem;
@@ -80,6 +80,17 @@ footer {
 
 .itemCard .price {
 	font-size: 120%;
+	background-color: rgb(0,0,0,0.5);
+	padding: 1rem;
+	border-radius: 1rem;
+	font-weight: bold;
+}
+
+.legend {
+	display: flex;
+	justify-content: space-around;
+	width: 60%;
+	margin: 0 auto;
 }
 
 .low {
@@ -88,4 +99,30 @@ footer {
 
 .soldOut {
 	background-color: darkred;
+}
+
+.stocked {
+	background-color: lightseagreen;
+}
+
+.square {
+	width: 8rem;
+	height: 3rem;
+	text-align: center;
+	padding-top: 1.5rem;
+	color: white;
+	margin: 1rem;
+	border-radius: 1rem;
+}
+
+@media only screen and (max-width: 640px) {
+	.container {
+		width: 100%;
+		margin: 0;
+	}
+
+	.itemCard {
+		width: 18rem;
+		height: 26rem;
+	}
 }

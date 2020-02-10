@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<meta charset="UTF-8">
 	<title>eGroceree</title>
 	<link rel="stylesheet" href="css/style.css" type="text/css" />
+	<link href="https://fonts.googleapis.com/css?family=Righteous&display=swap" rel="stylesheet">
 	<script src="js/jquery-3.4.1.min.js"></script>
 	<script src="json/products.js"></script>
 </head>
@@ -11,7 +13,7 @@
 
 <div id="container">
 	
-	<header>
+	<header class="stocked">
 		<div class="headerArea">
 			<h2>eGroceree</h2>
 		</div>
@@ -30,7 +32,18 @@
 
 	<main>
 		<h1 class="mainSlogan">The eGroceree Store</h1>
-		<h2 class="featuredTitle">Featured Products</h2>	
+		<h2 class="featuredTitle">Featured Products</h2>
+		<div class="legend">
+			<div class="stocked square">
+				In stock
+			</div>
+			<div class="low square">
+				Low stock
+			</div>
+			<div class="soldOut square">
+				Sold Out
+			</div>
+		</div>	
 		<div id="productArea">
 		</div>
 	</main>
