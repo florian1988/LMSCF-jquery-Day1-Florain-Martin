@@ -27,6 +27,7 @@ header h2 {
 .headerArea p {
 	margin-top: 4rem;
 	margin-right: 4rem;
+	margin-left: 2rem;
 	font-weight: bold;
 	font-size: 120%;
 }
@@ -116,13 +117,33 @@ footer {
 }
 
 @media only screen and (max-width: 640px) {
-	.container {
-		width: 100%;
+	body {
+		padding: 0;
 		margin: 0;
 	}
 
+	#container {
+		width: 100%;
+		margin: 0;
+		box-shadow: none;
+	}
+
 	.itemCard {
-		width: 18rem;
-		height: 26rem;
+		width: 20rem;
+		height: 32rem;
+	}
+
+	.legend {
+		width: 90%;
+	}
+
+	header {
+		flex-direction: column;
+		text-align: center;
+	}
+
+	.headerArea p, .headerArea h2 {
+		margin: 0;
+		padding: 0;
 	}
 }
