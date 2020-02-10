@@ -1,0 +1,76 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Basic</title>
+	<script src="js/jquery-3.4.1.min.js"></script>
+</head>
+<body>
+<header>
+	<h1>CSS Selectors</h1>
+	<div class="note">
+		This page demonstrates <strong>CSS Selectors</strong>
+	</div>
+</header>
+<article>
+	<p id="intro">Welcome to this CSS3 Selector tutorial.</p>
+	<p>Today you will learn about:</p>
+	<ul>
+		<li>selecting elements by:
+			<ul>
+				<li>type</li>
+				<li>id</li>
+				<li>class</li>
+			</ul>
+		</li>
+		<li>selecting elements using attributes</li>
+		<li>creating efficient selectors</li>
+	</ul>
+	<p class="note">CSS selectors are powerful!</p>
+</article>
+<footer>
+	<p><a href="http://www.codefactory.wien/">&copy; Code Factory</a></p>
+	<p><a href="http://google.com/">By Craig Buckler</a></p>
+	<p><a href="http://www.selectorgadget.com/">Tool by selectorgadget.com</a></p>
+</footer>
+
+<script>
+	
+	$( document ).ready(function() {
+
+		let allElements = $('*');
+		console.log(allElements);
+
+		let allPElements = $('p');
+		console.log(allPElements);
+
+		let allPIntroElements = $('p#intro');
+		console.log(allPIntroElements);
+
+		let allNoteElements = $('div.note');
+		console.log(allNoteElements);
+
+		let allPArticleElements = $('article p');
+		console.log(allPArticleElements);
+
+		let lastElement = $('p').last();
+		console.log(lastElement);
+
+		let firstElement = $('p:first');
+		console.log(firstElement);
+
+		let allPLinkElements = $('p a');
+		console.log(allPLinkElements);
+
+		let secondUlLiElements = $('ul li:eq(1)');
+		console.log(secondUlLiElements);
+
+		let secondThirdPElements = $('p:nth-child(1), p:nth-child(2)');
+		console.log(secondThirdPElements);
+
+	});
+
+</script>
+
+</body>
+</html>

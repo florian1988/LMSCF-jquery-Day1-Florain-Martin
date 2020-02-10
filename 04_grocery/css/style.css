@@ -1,0 +1,32 @@
+header {
+	background-color: lightsteelblue;
+	color: lightseagreen;
+}
+
+
+#productArea {
+	width: 75%;
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0 auto;
+}
+
+.itemCard {
+	width: 14rem;
+	height: 23rem;
+	padding: 1rem;
+	text-align: center;
+	background-color: lightseagreen;
+	border-radius: 1rem;
+	color: white;
+	margin: 0.4rem;
+}
+
+.itemCard img {
+	width: 100%;
+	border-radius: 1rem;
+}
+
+.itemCard .price {
+	font-size: 120%;
+}
